@@ -1,0 +1,29 @@
+.card_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3rem;
+    padding: 3rem;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(15rem, max-content));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+
+    &__content {
+        padding: 1rem;
+    }
+
+    &__icon {
+        width: 80%;
+        height: 90%;
+        fill: $color-primary-dark;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 60%;
+            height: 70%;
+        }
+    }
+}

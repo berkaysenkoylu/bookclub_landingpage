@@ -1,0 +1,8 @@
+.arrow {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-left: 4px solid $color-grey-light-2;
+    border-bottom: 4px solid $color-grey-light-2;
+    transform: scale(0.5) rotate(-45deg);
+}
